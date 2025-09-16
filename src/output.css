@@ -16,6 +16,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-black: 900;
+    --tracking-normal: 0em;
     --tracking-widest: 0.1em;
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
@@ -377,6 +378,10 @@
   .tracking-\[20px\] {
     --tw-tracking: 20px;
     letter-spacing: 20px;
+  }
+  .tracking-normal {
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
   .tracking-widest {
     --tw-tracking: var(--tracking-widest);

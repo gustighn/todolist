@@ -79,7 +79,7 @@ function Container({ items, addItem, deleteItem, startEdit, saveEdit }) {
         <label className="relative">
           <input
             placeholder="Tambah Item"
-            className="py-2 px-4 w-[90%] h-14 lg:w-[400px] bg-white rounded-full pr-12 shadow-sm tracking-none"
+            className="py-2 px-4 w-[90%] h-14 lg:w-[400px] bg-white rounded-full pr-12 shadow-sm tracking-normal"
             value={inputValue}
             onChange={handleChange}
           />
