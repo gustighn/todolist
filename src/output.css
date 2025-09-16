@@ -271,7 +271,7 @@
     border-radius: var(--radius-3xl);
   }
   .rounded-full {
-    border-radius: 9999px;
+    border-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -411,6 +411,38 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .placeholder\:tracking-normal {
+    &::placeholder {
+      --tw-tracking: var(--tracking-normal);
+      letter-spacing: var(--tracking-normal);
+    }
+  }
+  .md\:h-\[280px\] {
+    @media (width >= 48rem) {
+      height: 280px;
+    }
+  }
+  .md\:h-\[440px\] {
+    @media (width >= 48rem) {
+      height: 440px;
+    }
+  }
+  .md\:w-4\/5 {
+    @media (width >= 48rem) {
+      width: calc(4/5 * 100%);
+    }
+  }
+  .md\:w-\[400px\] {
+    @media (width >= 48rem) {
+      width: 400px;
+    }
+  }
+  .md\:tracking-\[10px\] {
+    @media (width >= 48rem) {
+      --tw-tracking: 10px;
+      letter-spacing: 10px;
+    }
   }
   .lg\:h-\[280px\] {
     @media (width >= 64rem) {

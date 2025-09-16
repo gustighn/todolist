@@ -72,14 +72,14 @@ function Container({ items, addItem, deleteItem, startEdit, saveEdit }) {
 
   return (
     <>
-      <h1 className="text-6xl font-[1000] font-serif mt-10 text-slate-700 text-center tracking-[5px] lg:tracking-[10px]">
+      <h1 className="text-6xl font-[1000] font-serif mt-10 text-slate-700 text-center tracking-[5px] md:tracking-[10px]">
         TUGAS
       </h1>
-      <div className="w-[90%] lg:w-4/5 h-[600px] lg:h-[440px] mx-auto rounded-3xl mt-10 bg-gray-100 py-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.25)]">
+      <div className="w-[90%] md:w-4/5 h-[600px] md:h-[440px] mx-auto rounded-3xl mt-10 bg-gray-100 py-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.25)]">
         <label className="relative">
           <input
             placeholder="Tambah Item"
-            className="py-2 px-4 w-[90%] h-14 lg:w-[400px] bg-white rounded-full pr-12 shadow-sm tracking-normal"
+            className="py-2 px-4 w-[90%] h-14 md:w-[400px] bg-white rounded-full pr-12 shadow-sm tracking-normal placeholder:tracking-normal"
             value={inputValue}
             onChange={handleChange}
           />
@@ -96,7 +96,7 @@ function Container({ items, addItem, deleteItem, startEdit, saveEdit }) {
           </svg>
         </label>
 
-        <div className="items__container h-[420px] lg:h-[280px] mt-12 flex flex-col gap-2 overflow-y-auto scrollbar-hide snap-y snap-mandatory pb-0.5">
+        <div className="items__container h-[420px] md:h-[280px] mt-12 flex flex-col gap-2 overflow-y-auto scrollbar-hide snap-y snap-mandatory pb-0.5">
           {items.map((item) => (
             <Item
               key={item.id}
@@ -116,7 +116,7 @@ function Item({ item, deleteItem, startEdit, saveEdit }) {
   const [editText, setEditText] = useState(item.text);
 
   return (
-    <div className="fade-in w-[90%] lg:w-[400px] mx-auto bg-white h-11 min-h-[44px] rounded-full shadow-sm text-slate-600 px-4 flex items-center justify-between snap-start">
+    <div className="fade-in w-[90%] md:w-[400px] mx-auto bg-white h-11 min-h-[44px] rounded-full shadow-sm text-slate-600 px-4 flex items-center justify-between snap-start">
       {item.isEditing ? (
         <input
           className="w-full bg-transparent outline-none truncate h-full"
