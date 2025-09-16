@@ -73,7 +73,7 @@ function Container({ items, addItem, deleteItem, startEdit, saveEdit }) {
   return (
     <>
       <h1 className="text-6xl font-[1000] font-serif mt-10 text-slate-700 text-center tracking-[5px] lg:tracking-[10px]">
-        TODOLIST
+        TUGAS
       </h1>
       <div className="w-[90%] lg:w-4/5 h-[600px] lg:h-[440px] mx-auto rounded-3xl mt-10 bg-gray-100 py-10 shadow-[0_8px_30px_-10px_rgba(0,0,0,0.25)]">
         <label className="relative">
